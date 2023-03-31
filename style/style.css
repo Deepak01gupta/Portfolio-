@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:cursive;
+}
+
+body{
+    padding-top: 1vh;
+    background-color: black;
+    background-size: unset;
+    background-repeat: repeat;
+    height: 96vh;
+}
+
+nav{
+    display: flex;
+    height: 7%;
+    padding-bottom: 10px;
+    background-color:rgb(24, 21, 21);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+ 
+}
+
+
+.dpimg{
+    cursor: pointer;
+    border: 2px solid rgb(248, 134, 41);
+    padding: 0px;
+    border-radius: 50%;
+    width: 5%;
+    margin: auto 0px;
+    margin-left: 15px;
+}
+
+.navbar .personalInfo{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px;
+    margin-left: 2%;
+}
+
+.personalInfo #name{
+    color:rgb(248, 134, 41);
+    margin-bottom: 4px;
+}
+
+.personalInfo #lastseen{
+    color: rgba(248, 134, 41, 0.671);
+    font-size: small;
+}
+
+
+.scrollable{
+    overflow-y: scroll;
+    color:white;
+    display: flex;
+    height: 84%;
+    flex-direction: column;
+    background-image: url('../images/bg.png');
+    align-items: flex-end;
+    position: relative;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    position: relative;
+}
+
+.scrollable .chatting{
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width:none; 
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollable .chatting::-webkit-scrollbar {
+    display: none;
+  }
+
+#listUL{
+    overflow-y: hidden;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    animation: floutup .5s forwards;
+}
+
+#listUL li{
+    width: 100%;
+    text-decoration: none;
+    flex-direction: row-reverse;
+    animation: floutup .5s forwards;
+}
+
+.sent{
+    text-align: end;
+    float: right;
+    width: auto;
+    max-width: 45%;
+    animation: floutup .5s forwards;
+}
+
+.green{
+    margin: 5px;
+    text-align: start;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(122, 80, 45);
+    border-radius: 15px 15px 0px;
+    animation: floutup .5s forwards;
+}
+
+#sentlabel{
+    color: rgba(248, 134, 41, 0.671);
+    display: block;
+    text-align: end;
+    font-size: x-small;
+    animation: floutup .5s forwards;
+    
+}
+
+
+.grey{
+    max-width: 45%;
+    margin: 5px;
+    text-align: start;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(24, 21, 21);
+    border-radius: 0px 15px 15px;
+    animation: floutup .5s forwards;
+}
+
+.grey .mapview{
+    margin: auto;
+    display: flex;
+    padding: 5px;
+    animation: floutup .5s forwards;
+}
+
+.add address{
+    margin-top: 10px;
+    padding-left: 20px;
+    animation: floutup .5s forwards;
+}
+
+.map{
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    animation: floutup .5s forwards;
+}
+
+.dateLabel{
+    color:  rgba(248, 134, 41, 0.671);
+    display: block;
+    text-align: end;
+    font-size: x-small;
+}
+
+
+/* help menu bold words color  */
+
+.sk .bold{
+    color:rgb(248, 134, 41);
+}
+
+
+/* resume thumbnail in received class*/
+.resumeThumbnail{
+    width: 100%;
+    border-radius: 15px ;
+}
+
+.downloadSpace{
+    display: flex;
+    width: 100%;
+}
+.downloadSpace .pdfname{
+    display: flex;
+    width: 100%;
+}
+.pdfname label{
+    margin: 13px;
+}
+.downloadSpace img{
+    width: 40px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 25%;
+}
+
+
+/* this css is used for embedded html in messages */
+.bold{
+    font-weight: bold;
+}
+
+.alink{
+    color: rgb(248, 134, 41);
+    transition: all 600ms ease;
+    text-decoration: underline;
+}
+
+.alink:hover{
+    text-decoration: none;
+    color: rgb(14, 103, 185);
+}
+
+/* this css is used for social links message */
+
+.social{
+    display: flex;
+    padding: 0px;
+}
+
+
+.social .socialItemI{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.social .socialItem:hover{
+    background-color: rgb(248, 134, 41);
+    border-radius: 15%;
+}
+
+
+
+.scrollable .fullScreenDP{
+    transition: all 700ms ease-in-out;
+    position: absolute;;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    background-color:rgba(24, 21, 21, 0.788);
+    z-index: 1000;
+}
+
+.scrollable .fullScreenDP .insideDP{
+    display: flex;
+    margin: auto;
+    scrollbar-width: 0px;
+}
+
+.scrollable .fullScreenDP .insideDP .dp{
+    width: 90%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    color: rgb(248, 134, 41);
+    text-align: center;
+    height: auto;
+    background-color:rgb(24, 21, 21);
+    text-align: center;
+}
+
+.sendBar{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.sendBar svg{
+    margin: auto;
+    height: 50%;
+    min-height: 50%;
+
+}
+
+.sendBar input[type='text']{
+    margin: auto;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 12px;
+    color:rgb(248, 134, 41);
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(24, 21, 21);
+    outline: none;
+    border-color: rgb(248, 134, 41);
+}
+
+@keyframes floutup {
+    from{
+        transform: translateY(15px);
+        opacity: .0;
+    }to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    body{
+        margin: auto;
+        width: 50vw;
+    }
+
+    .sendBar{
+        width: 85%;
+    }
+
+    .scrollable .fullScreenDP .insideDP{
+        display: flex;
+        width: 65%;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content=" Deepak Gupta's Portfolio Website">
+    <meta property="og:updated_time" content="1440432930" />
+    
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    
+    <title>Portfolio </title>
+</head>
+
+<body onload="startFunction()">
+
+    <nav>
+
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/dp.jpg" alt="">
+          
+            <div class="personalInfo">
+                <label id="name">Deepak Gupta</label>
+                <label id="lastseen">last seen </label>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="scrollable" id="myScrollable">
+        <div class="fullScreenDP" id="fullScreenDP">
+            <div class="insideDP">
+                <img class="dp" src="images/dp.jpg" alt="">
+    
+            </div>
+        </div>
+
+        <div id="chatting" class="chatting">
+            <ul id="listUL">
+            </ul>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="sendBar">
+            <input id="inputMSG" onkeypress="isEnter(event)" type="text" placeholder="Message" autofocus>
+            <svg onclick="sendMsg()" viewBox="0 0 28 28" width="28" height="28" class="">
+                <path fill="currentColor"
+                    d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+            </svg>
+        </div>
+    </footer>
+
+</body>
+
+</html>
